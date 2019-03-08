@@ -1,11 +1,11 @@
 <template>
-    <div id="header">
+    <header id="header" class="header">
         <Nav/>
         <h1>LOGO</h1>
         <Menu/>
         <Search/>
         <Slider/>
-    </div>
+    </header>
 </template>
 
 <script>
@@ -20,9 +20,3 @@ export default {
     }
 }
 </script>
-
-<style>
-    #header {
-        border-bottom: 1px solid;
-    }
-</style>

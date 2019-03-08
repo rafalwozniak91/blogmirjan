@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import Home from './views/Home.vue'
 import Post from './views/Post.vue'
 import Category from './views/Category.vue'
+import Example from './components/Example.vue'
 
 Vue.use(Router)
 
@@ -32,6 +33,11 @@ export default new Router({
       // this generates a separate chunk (about.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
       component: () => import(/* webpackChunkName: "about" */ './views/About.vue')
-    }
+    },
+    {
+      path: '/example',//trzeba bedzie link zmienic
+      name: 'example',
+      component: Example
+    },
   ]
 })

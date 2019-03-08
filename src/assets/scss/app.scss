@@ -1,0 +1,137 @@
+@import "bulma/sass/utilities/_all.sass";
+@import "bulma/sass/grid/_all.sass"; 
+@import "bulma/sass/elements/container.sass";
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500');
+
+
+/* Colors */
+
+$bg-color: #eee;
+$primary: #E91E63;
+$primary-text: #777; 
+$light-gray: #eee; 
+$dark-gray: #444; 
+
+body {
+	background: $bg-color;
+	font-family: 'Roboto', sans-serif;
+    color: $primary-text;
+    margin: 0;
+    font-size: 1rem;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+.button {
+	padding: .5rem 1.5rem;
+	font-size: 1rem;
+	border-radius: .125rem;
+	border: .125rem solid $primary;
+	font-family: inherit;
+	font-weight: 500;
+	color: $primary;
+	background: none;
+	display: inline-block;
+	margin: .125rem;
+	line-height: 1;
+	cursor: pointer;
+	text-transform: uppercase;
+	box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+	transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+
+	&:hover,
+	&:active,
+	&:focus {
+		outline: none;
+		background: $primary;
+		color: white;
+		box-shadow: 0 5px 11px 0 rgba(0,0,0,.18), 0 4px 15px 0 rgba(0,0,0,.15);
+	}
+
+	&.is {
+
+		&-small {
+			padding: .4rem .9rem;
+			font-size: .85rem;
+		}
+
+		&-large {
+			padding: .6rem 2.2rem;
+			font-size: 1.1rem;
+		}
+	}
+
+	&-link {
+		border-color: transparent;
+		background: $light-gray;
+		box-shadow: none;
+	}
+}
+
+.link {
+
+	border-color: transparent;
+	background: $light-gray;
+	box-shadow: none;
+	border-radius: .125rem;
+	padding: .4rem .9rem;
+	font-size: .85rem;
+	font-weight: 500;
+	color: $primary;
+	text-transform: uppercase;
+	margin: .125rem;
+	transition: color .15s ease-in-out,background-color .15s ease-in-out;
+
+	&:hover,
+	&:active,
+	&:focus {
+		outline: none;
+		background: $primary;
+		color: white;
+	}
+
+}
+
+.card {
+	background: white;
+	margin-bottom: 2rem;
+
+	&-header {
+		padding: 1rem;
+	}
+
+	&-image {
+		max-height: 200px;
+		overflow: hidden;
+	}
+
+	&-title {
+		margin: 0;
+    	line-height: 1;
+    	font-size: 2rem;
+    	color: $dark-gray;
+	}
+
+	&-subtitle {
+		font-size: 1.2rem;
+		font-weight: 500;
+		display: block;
+		margin-bottom: .25rem;
+	}
+
+	&-content {
+		padding: 1rem;
+	    line-height: 1.6;
+	    font-weight: 300;
+	}
+
+	&-footer {
+		padding: 0 1rem 1rem 1rem;
+		font-size: .8rem;
+		text-align: center;
+	}
+
+}
